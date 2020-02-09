@@ -1,5 +1,9 @@
 = Vertx Demo Project
 
+
+This project is a support to learn vertx.
+It provides various implementation of the vertx library. 
+
 image:https://img.shields.io/badge/vert.x-3.8.5-purple.svg[link="https://vertx.io"]
 
 This application was generated using http://start.vertx.io
@@ -49,6 +53,10 @@ Test gateway service using HHTPie :
 http :8080
 
 ```
+
+== BeyondEventBus
+Launch BeyondEventBusMain
+
 
 == Logging
 
