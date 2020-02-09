@@ -1,25 +1,62 @@
-= Vertx
+= Vertx Demo Project
 
 image:https://img.shields.io/badge/vert.x-3.8.5-purple.svg[link="https://vertx.io"]
 
 This application was generated using http://start.vertx.io
 
-== Building
+== Eclipse
 
-To launch your tests:
-```
-./mvnw clean test
-```
+Run main verticle on eclipse :
 
-To package your application:
 ```
-./mvnw clean package
+Main class : io.vertx.core.Launcher
+Arguments : run ancm.training.vertx.MainVerticle
+
 ```
 
-To run your application:
+== Local Event bus Main
+
+Run LocalEventBusMain
+
+Test SSE (server side event) using HTTPie :
 ```
-./mvnw clean compile exec:java
+http http://localhost:8080/sse --stream 
+
 ```
+Test application via browser : 
+```
+http://localhost:8080/
+
+```
+
+== Distributed Event bus :
+Infinispan is used as the cluster manager
+
+Run DistributedEventBusFirstInstance and DistributedEventBusSecondInstance
+
+Test application via browser : 
+```
+http://localhost:8080/
+http://localhost:8081/
+
+```
+
+== BeyondCallback
+Launch BeyondCallBackMain
+
+Test gateway service using HHTPie :
+```
+http :8080
+
+```
+
+== Logging
+
+The project uses log4j2
+
+== Links
+
+https://github.com/jponge/vertx-in-action
 
 == Help
 
